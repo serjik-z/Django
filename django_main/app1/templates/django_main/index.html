@@ -1,0 +1,17 @@
+{% extends 'django_main/layout.html' %}
+
+{% block title %} Главная страница {% endblock %}
+
+{% block content %}
+      <div class="features">
+
+            <h1>{{ title }}</h1>
+            <p>LoremL or emLorem Lor emL orem Lor emLor  emLo remLo emLo rem LoremL  oremL o emL ore mLo emL oremL r em Lore mLo emL o rem</p>
+            <button class="btn btn-warning">На страницу про нас</button>
+            {% for el in values %}
+            <p>{{ el }}</p>
+            {% endfor %}
+      </div>
+
+
+{% endblock %}
